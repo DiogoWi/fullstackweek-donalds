@@ -28,7 +28,7 @@ const ProductPage = async ({ params }: ProductPageProps) => {
         return notFound();
     }
 
-    if (product.restaurant.slug.toUpperCase() == slug.toUpperCase()) {
+    if (product.restaurant.slug.toUpperCase() !== slug.toUpperCase()) {
         return notFound();
     }
 
