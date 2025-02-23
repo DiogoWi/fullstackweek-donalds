@@ -15,10 +15,10 @@ const CartProductItem = ({ product }: CartItemProps) => {
     const { decreaseProductQuantity, increaseProductQuantity, removeProduct } = useContext(CartContext);
 
     return (
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-3">
             {/* ESQUERDA */}
-            <div className="flex items-center gap-3">
-                <div className="relative h-20 w-20 rounded-xl bg-gray-100">
+            <div className="flex items-center gap-3 w-[85%]">
+                <div className="relative min-h-20 min-w-20 rounded-xl bg-gray-100">
                     <Image src={product.imageUrl} alt={product.name} fill />
                 </div>
                 <div className="space-y-1">
